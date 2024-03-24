@@ -1,5 +1,5 @@
 # **COMPRESSION HASKELL**
-## *Présentation des Méthodes de Compression*
+## *Méthodes de Compression*
 
 ## Table des Matières
 - [Présentation](#présentation)
