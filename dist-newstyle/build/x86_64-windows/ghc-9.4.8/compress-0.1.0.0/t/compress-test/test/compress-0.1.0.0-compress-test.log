@@ -1,0 +1,5 @@
+Test suite compress-test: RUNNING...
+[199,32,32,32,32,32,252,32,32,32,32,233,32,32,32,32,226,32,32,32,32,228,32,32,32,32,224,32,32,32,32,229,32,32,32,32,231]
+Just "\199     \252    \233    \226    \228    \224    \229    \231"
+Test suite compress-test: PASS
+Test suite logged to: C:\Users\ilyas\Desktop\hskl\compress\dist-newstyle\build\x86_64-windows\ghc-9.4.8\compress-0.1.0.0\t\compress-test\test\compress-0.1.0.0-compress-test.log

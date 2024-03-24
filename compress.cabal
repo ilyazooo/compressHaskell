@@ -1,0 +1,82 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.36.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           compress
+version:        0.1.0.0
+synopsis:       Lossless compression
+description:    Please see README.md
+category:       Lossless compression
+author:         ???
+maintainer:     ???
+copyright:      2023 CY Tech
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+library
+  exposed-modules:
+      LZ.Dictionaries
+      LZ.LZ78
+      LZ.LZW
+      RLE
+      Statistic.Bit
+      Statistic.EncodingTree
+      Statistic.Huffman
+      Statistic.ShannonFano
+      Statistic.Source
+  other-modules:
+      Paths_compress
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -prof -fprof-auto
+  build-depends:
+      HUnit
+    , base >=4.7 && <5
+    , containers
+    , directory
+    , filepath
+    , temporary
+    , process
+  default-language: Haskell2010
+
+executable compress-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_compress
+  hs-source-dirs:
+      app
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N -prof -fprof-auto
+  build-depends:
+      HUnit
+    , base >=4.7 && <5
+    , compress
+    , containers
+    , directory
+    , filepath
+    , temporary
+    , process
+  default-language: Haskell2010
+
+test-suite compress-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_compress
+  hs-source-dirs:
+      test
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N -prof -fprof-auto
+  build-depends:
+      HUnit
+    , base >=4.7 && <5
+    , compress
+    , containers
+    , directory
+    , filepath
+    , temporary
+  default-language: Haskell2010
+
