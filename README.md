@@ -16,7 +16,7 @@ Pour exécuter les outils de compression, suivez les instructions ci-dessous :
 ## Étape 1 : Cloner le dépôt
 1. Ouvrez votre terminal.
 2. Naviguez vers le répertoire de votre choix.
-3. Clonez le dépôt avec la commande : git clone [\(https://github.com/ilyazooo/compressHaskell.git)](https://github.com/ilyazooo/compressHaskell.git)
+3. Clonez le dépôt avec la commande : git clone [\https://github.com/ilyazooo/compressHaskell.git](https://github.com/ilyazooo/compressHaskell.git)
 
 ## Étape 2 : Installer Haskell et les dépendances
 1. Assurez-vous que [The Haskell Tool Stack](https://docs.haskellstack.org/en/stable/README/) est installé sur votre machine.
